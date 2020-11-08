@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"cd ../client && npm start\"",
+    "server": "nodemon server.js" 
+  },
+  "author": "goChat Team",
+  "license": "ISC"
+}

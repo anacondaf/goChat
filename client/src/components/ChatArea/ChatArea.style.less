@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
+.ChatArea {
+    position: relative;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f7f7;
+    padding: 1.8em 0 0 0;
+
+    hr {
+        border: 0.3px solid #e4ecf3;
+    }
+
+    .to__user {
+        padding: 0.1em 2em 0.1em 2em;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Montserrat", sans-serif;
+
+        .name__status {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            p {
+                display: flex;
+                align-items: flex-start;
+                font-size: 17px;
+                height: 100%;
+                outline: none;
+            }
+
+            .status {
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                div {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: #43de9f;
+                    margin-right: 0.5em;
+                }
+
+                span {
+                    display: flex;
+                    height: 100%;
+                    font-size: 13px;
+                    color: #5f5f5f;
+                }
+            }
+        }
+
+        .calling__zone {
+            flex-basis: 20%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            height: 100%;
+
+            i {
+                font-size: 17px;
+                color: #49586b;
+                margin: 0 0.5em;
+            }
+        }
+    }
+
+    .chat__zone {
+        padding: 0 2em 0 2em;
+
+        .command__btn {
+            display: none;
+        }
+
+        .TextFrom {
+            margin: 2em 0;
+            width: 400px;
+            word-wrap: break-word;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 200;
+            border-radius: 7px;
+            display: flex;
+
+            .from__avatar {
+                margin-right: 1em;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+            }
+
+            .text__data {
+                position: relative;
+
+                .command__btn {
+                    position: absolute;
+                    left: 105%;
+                    top: 30%;
+                }
+
+                .text__content {
+                    position: relative;
+                    background-color: #fff;
+                    padding: 0.75em 1em 0.75em 2em;
+
+                    .curve {
+                        position: absolute;
+                        top: 2px;
+                        left: -15px;
+                        height: 30px;
+                        width: 30px;
+                        background-color: #f2f7f7;
+                        border-radius: 50%;
+                    }
+
+                    .rect {
+                        position: absolute;
+                        top: 17px;
+                        left: -15px;
+                        width: 30px;
+                        height: 50px;
+                        background-color: #f2f7f7;
+                    }
+                }
+
+                .timing {
+                    float: right;
+                    width: 100px;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 13px;
+                    color: #929292;
+                }
+            }
+        }
+
+        .TextTo {
+            margin: 2em 0;
+            margin-left: auto;
+            width: 400px;
+            word-wrap: break-word;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 200;
+            border-radius: 7px;
+            display: flex;
+
+            .from__avatar {
+                margin-left: 1em;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+            }
+
+            .text__data {
+                position: relative;
+
+                .command__btn {
+                    position: absolute;
+                    right: 105%;
+                    top: 30%;
+                }
+
+                .text__content {
+                    position: relative;
+                    background-color: #54d38a;
+                    padding: 0.75em 2em 0.75em 1em;
+
+                    .curve {
+                        position: absolute;
+                        top: 2px;
+                        left: calc(100% - 15px);
+                        height: 30px;
+                        width: 30px;
+                        background-color: #f2f7f7;
+                        border-radius: 50%;
+                    }
+
+                    .rect {
+                        position: absolute;
+                        top: 17px;
+                        left: calc(100% - 15px);
+                        width: 30px;
+                        height: 50px;
+                        background-color: #f2f7f7;
+                    }
+                }
+
+                .timing {
+                    float: left;
+                    width: 100px;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 13px;
+                    color: #929292;
+                }
+            }
+        }
+    }
+
+    .texting {
+        position: absolute;
+        top: calc(92% - 1em);
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        padding: 0.5em 1em 0.5em 0;
+        width: calc(100% - 1em);
+
+        .social {
+            flex-basis: 8%;
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+            margin-left: 0.25em;
+
+            i {
+                color: #d6dce1;
+                font-size: 17px;
+            }
+        }
+
+        .send {
+            height: 100%;
+            flex-basis: 92%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-left: 0.5em;
+            border-left: 1px solid #d6dce1;
+
+            .input {
+                flex-basis: 95%;
+                border: none;
+                padding: 1em 0 1em 0.5em;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .icon {
+                flex-basis: 5%;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}

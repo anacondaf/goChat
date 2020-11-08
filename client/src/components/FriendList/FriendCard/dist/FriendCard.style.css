@@ -1,0 +1,71 @@
+.FriendCard:first-child {
+  margin: 0 0 0.5em 0;
+}
+.FriendCard:last-child {
+  margin: 0.5em 0 0.9em 0;
+}
+.FriendCard:hover {
+  box-shadow: 5px 5px 10px #000;
+  background-color: #272e36;
+  transition: 0.2s ease-out;
+}
+.active {
+  box-shadow: 5px 5px 10px #000;
+  background-color: #272e36;
+  transition: 0.2s ease-out;
+}
+.FriendCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+  margin: 0.5em 0;
+  cursor: pointer;
+}
+.FriendCard .photo {
+  position: relative;
+}
+.FriendCard .photo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.FriendCard .photo .user__status {
+  position: absolute;
+  top: -5%;
+  left: 3%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #46ff6d;
+  border: 4px solid #303841;
+}
+.FriendCard .friend__info {
+  display: flex;
+  flex-direction: column;
+}
+.FriendCard .friend__info .friend__name {
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 0.25em;
+}
+.FriendCard .friend__info .text {
+  color: #929292;
+  font-size: 13px;
+}
+.FriendCard .notification {
+  display: flex;
+  justify-content: center;
+}
+.FriendCard .notification div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+.FriendCard .notification div span {
+  color: #fff;
+}

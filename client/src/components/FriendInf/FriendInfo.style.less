@@ -1,0 +1,73 @@
+.FriendInfo {
+    flex-basis: 15%;
+    padding: 2em 1.5em;
+    background-color: #fcffff;
+    font-family: "Montserrat", sans-serif;
+
+    .info__zone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1.5em;
+        }
+
+        .info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #9fa5ac;
+
+            .header {
+                font-size: 23px;
+                color: #000;
+                margin-bottom: 0.25em;
+            }
+
+            .title {
+                font-size: 16px;
+                font-style: italic;
+            }
+
+            .achievements {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 1.5em;
+
+                ul {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        margin: 0.75em 0;
+
+                        i {
+                            display: flex;
+                            justify-content: center;
+                            flex-basis: 20%;
+                            font-size: 20px;
+                        }
+
+                        p {
+                            flex-basis: 80%;
+                            margin-left: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

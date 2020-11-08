@@ -1,0 +1,123 @@
+.MenuBarComponent {
+    flex-basis: 10%;
+    border-bottom: 1px solid #d6dce1;
+
+    .user__avatar {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        img:not(#icon) {
+            z-index: 10000;
+            position: relative;
+            width: 70px;
+            height: 70px;
+            border: 1px solid rgb(189, 189, 189);
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .avatar__bound {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            top: -3px;
+            left: -3px;
+            content: "";
+            border: 1px solid rgb(110, 110, 110);
+            border-radius: 50%;
+            transition: 0.5s ease;
+            opacity: 0;
+        }
+
+        .submenu__hidden {
+            display: none;
+        }
+
+        .user__submenu {
+            z-index: 10;
+            position: absolute;
+            top: 90%;
+            left: 25%;
+            transform: translateX(-7px);
+            background-color: #000;
+            transition: 0.7s all;
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                li {
+                    padding: 1em;
+                    display: flex;
+                    align-items: center;
+
+                    #icon {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 0.8em;
+                    }
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        text-transform: capitalize;
+                    }
+                }
+
+                .log__out {
+                    border-top: 1px solid #fff;
+                }
+
+                li:hover > a {
+                    color: rgb(131, 164, 255);
+                }
+            }
+        }
+    }
+
+    .big__main__title {
+        flex: 3;
+
+        p {
+            text-transform: uppercase;
+            font-size: 30px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .download__app {
+        flex: 1;
+        padding-right: 1em;
+        display: flex;
+        align-items: center;
+
+        a {
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            text-decoration: none;
+            margin: 0 1em;
+            color: #5e5e5e;
+            font-size: 15px;
+        }
+
+        a:first-child {
+            margin: 0 1em 0 0;
+        }
+
+        a:last-child {
+            margin: 0 0 0 1em;
+        }
+
+        a:hover {
+            color: #000;
+        }
+    }
+}
