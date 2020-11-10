@@ -8,17 +8,20 @@ const app = express();
 const server = http.createServer(app);
 const PORT = 3001 || process.env.PORT;
 
-const socketIo = require("socket.io")(server);
+const io = require("socket.io")(server);
+
+const usersList = [];
 
 //express config
 app.use(express.static(path.join(__dirname, "public")));
 
 //socket.io
-socketIo.on("connection", (socket) => {
+io.on("connection", (socket) => {
     console.log(socket.id + ": connected");
+    usersList.push({ id: socket.id });
 
-    socket.on("client-send-data", (msg) => {
-        socket.broadcast.emit("server-send-data", msg);
+    socket.on("client-send-data", (data) => {
+        io.to("dWFotaBZkFpeGrj3AAAC").emit("user-send-to-user", data);
     });
 });
 

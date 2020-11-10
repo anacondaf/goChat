@@ -12,7 +12,7 @@
     "nodemon": "^2.0.6"
   },
   "scripts": {
-    "start": "concurrently \"npm run server\" \"cd ../client && npm start\"",
+    "start": "concurrently \"cd ../client && npm start\" \"npm run server\"",
     "server": "nodemon server.js" 
   },
   "author": "goChat Team",
