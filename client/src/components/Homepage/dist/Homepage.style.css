@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_ZpC3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_c5H3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_epG3gnD-w.ttf) format('truetype');
+}
+::-webkit-input-placeholder {
+  /* Edge */
+  font-size: 15px;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-size: 15px;
+}
+::placeholder {
+  font-size: 15px;
+}
+.Homepage {
+  position: relative;
+  background: #fff;
+  height: 100%;
+  z-index: 1;
+}
+.Homepage .container {
+  padding: 2em 10em;
+  position: relative;
+}
+.Homepage nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  transition: all 1s;
+  background-color: #fff;
+}
+.Homepage nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Homepage nav .logo {
+  width: 50px;
+  height: 50px;
+}
+.Homepage nav ul {
+  display: flex;
+}
+.Homepage nav ul li:first-child {
+  padding: 0 2em 0 0;
+}
+.Homepage nav ul li:last-child {
+  padding: 0 0 0 2em;
+}
+.Homepage nav ul li {
+  list-style-type: none;
+  padding: 0 2em;
+}
+.Homepage nav ul li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+.Homepage header {
+  position: relative;
+  top: 100px;
+}
+.Homepage header .curve {
+  position: absolute;
+  top: 180px;
+}
+.Homepage header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Homepage header .container .text {
+  height: 550px;
+}
+.Homepage header .container .text .slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.Homepage header .container .text .slogan h1,
+.Homepage header .container .text .slogan h4 {
+  font-family: "Montserrat", sans-serif;
+}
+.Homepage header .container .text .slogan h1 {
+  font-size: 47px;
+  margin-top: 1.25em;
+  margin-bottom: 0.2em;
+  font-weight: 800;
+}
+.Homepage header .container .text .slogan h4 {
+  font-size: 22px;
+  margin-bottom: 1.5em;
+  font-weight: 500;
+}
+.Homepage header .container .text .form {
+  display: flex;
+  flex-direction: column;
+}
+.Homepage header .container .text .form .account {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 14px 5px 0;
+}
+.Homepage header .container .text .form .account .sign {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  color: #ff2525;
+  width: 24px;
+  height: 24px;
+}
+.Homepage header .container .text .form .warning {
+  font-family: "Montserrat", sans-serif;
+  color: #ff2525;
+  font-size: 15px;
+}
+.Homepage header .container .text .form input.password {
+  margin: 20px 14px 0 0;
+}
+.Homepage header .container .text .form input {
+  background-color: #e6effe;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 25px 12px 14px;
+  outline: none;
+  font-size: 18px;
+  width: 380px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.Homepage header .container .text .form input:focus {
+  border: 1px solid #0058fe;
+}
+.Homepage header .container .text .form .regis_wrapper {
+  margin-top: 1.5em;
+  width: 418px;
+}
+.Homepage header .container .text .form .regis_wrapper .signin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Homepage header .container .text .form .regis_wrapper .signin button {
+  font-family: "Montserrat", sans-serif;
+  width: 100px;
+  border: none;
+  border-radius: 66px;
+  background-color: #0058fe;
+  color: #fff;
+  width: 110px;
+  height: 43px;
+  outline: none;
+}
+.Homepage header .container .text .form .regis_wrapper .signin button p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  text-decoration: none;
+}
+.Homepage header .container .text .form .regis_wrapper .signin p {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.Homepage header .container .text .form .regis_wrapper .signup {
+  display: flex;
+  margin-top: 2em;
+}
+.Homepage header .container .text .form .regis_wrapper .signup p,
+.Homepage header .container .text .form .regis_wrapper .signup span {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.Homepage header .container .text .form .regis_wrapper .signup a {
+  text-decoration: none;
+  padding-left: 0.5em;
+  color: #0058fe;
+  cursor: pointer;
+}
+.Homepage header .container .main_background {
+  height: 550px;
+  width: 550px;
+}

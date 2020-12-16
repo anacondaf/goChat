@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import SimpleBar from "simplebar-react";
-import socketClient from "socket.io-client";
-
 //css
 import "./dist/ChatArea.style.css";
 
@@ -10,23 +8,13 @@ import TextFrom from "./TextComponent/TextFrom";
 import TextTo from "./TextComponent/TextTo";
 
 //socket.io endpoint
-const ENDPOINT = "http://localhost:3001";
 var socket;
 
 function ChatArea() {
     //state config
     const [textContent, setTextContent] = useState("");
-    const [textFrom, setTextFrom] = useState("");
-    const [textTo, setTextTo] = useState("");
-
-    useEffect(() => {
-        //effects
-        socket = socketClient(ENDPOINT);
-
-        socket.on("user-send-to-user", (data) => {
-            setTextTo(data);
-        });
-    }, []);
+    const [textFrom, setTextFrom] = useState(false);
+    const [textTo, setTextTo] = useState(false);
 
     const handleChange = (e) => {
         setTextContent(e.target.value);
@@ -34,7 +22,6 @@ function ChatArea() {
 
     const sendBtnClick = (e) => {
         setTextContent("");
-        socket.emit("client-send-data", textContent);
     };
 
     return (

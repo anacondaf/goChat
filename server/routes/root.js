@@ -1,9 +1,9 @@
-const express = require('express')
-const router = express.Router()
+const express = require("express");
+const router = express.Router();
 
 //import controllers
-const rootControl = require('../controllers/rootController')
+const rootController = require("../controllers/rootController");
 
-router.use('/', rootControl.getRoot)
+router.post("/", rootController.authUser);
 
-module.exports = router
+module.exports = router;

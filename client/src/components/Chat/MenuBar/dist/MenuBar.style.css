@@ -78,6 +78,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 .MenuBarComponent .download__app {
   flex: 1;
@@ -86,6 +88,8 @@
   align-items: center;
 }
 .MenuBarComponent .download__app a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   display: flex;
   align-items: center;

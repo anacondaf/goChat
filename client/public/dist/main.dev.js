@@ -16,4 +16,13 @@ window.onload = function () {
   userAvatarImg.addEventListener("mouseleave", function (e) {
     userAvatarBound.style.opacity = 0;
   });
+}; //navbar in Homepage
+
+
+window.onscroll = function () {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector("nav").style.boxShadow = "2px 2px 8px rgb(122, 122, 122)"; // document.querySelector("nav").style.backgroundColor = "#f1f1f1";
+  } else {
+    document.querySelector("nav").style.boxShadow = "none"; // document.querySelector("nav").style.backgroundColor = "inherit";
+  }
 };

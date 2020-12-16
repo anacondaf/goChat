@@ -1,33 +1,13 @@
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-display: swap;
-  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF7g4.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
 }
 body {
   overflow: hidden;
 }
-.AppComponent {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-.AppComponent hr {
-  margin: 1em 0 0 0;
-}
-.AppComponent .container {
-  padding: 0.5em 2em;
-  display: flex;
-  justify-content: space-between;
-  font-family: "Montserrat", sans-serif;
-}
-.AppComponent .ContentComponent {
-  flex: 1;
-  display: flex;
-  font-size: 15px;
-}
-.AppComponent .ContentComponent .container {
-  padding: 2em 0 0 0;
-  flex-direction: column;
+.App {
+  height: 100%;
 }

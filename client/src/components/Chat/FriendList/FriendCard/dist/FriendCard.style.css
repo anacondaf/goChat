@@ -45,6 +45,8 @@
   flex-direction: column;
 }
 .FriendCard .friend__info .friend__name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   color: #fff;
   font-size: 17px;
   margin-bottom: 0.25em;

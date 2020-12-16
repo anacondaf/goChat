@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900");
+
+::-webkit-input-placeholder {
+    /* Edge */
+    font-size: 15px;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-size: 15px;
+}
+
+::placeholder {
+    font-size: 15px;
+}
+
+.Homepage {
+    position: relative;
+    background: #fff;
+    height: 100%;
+    z-index: 1;
+
+    .container {
+        padding: 2em 10em;
+        position: relative;
+    }
+
+    nav {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 100px;
+        transition: all 1s;
+        background-color: #fff;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+        ul {
+            display: flex;
+
+            li:first-child {
+                padding: 0 2em 0 0;
+            }
+
+            li:last-child {
+                padding: 0 0 0 2em;
+            }
+
+            li {
+                list-style-type: none;
+                padding: 0 2em;
+
+                a {
+                    text-decoration: none;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    header {
+        position: relative;
+        top: 100px;
+
+        .curve {
+            position: absolute;
+            top: 180px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .text {
+                height: 550px;
+
+                .slogan {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+                    h1,
+                    h4 {
+                        font-family: "Montserrat", sans-serif;
+                    }
+
+                    h1 {
+                        font-size: 47px;
+                        margin-top: 1.25em;
+                        margin-bottom: 0.2em;
+                        font-weight: 800;
+                    }
+
+                    h4 {
+                        font-size: 22px;
+                        margin-bottom: 1.5em;
+                        font-weight: 500;
+                    }
+                }
+
+                .form {
+                    display: flex;
+                    flex-direction: column;
+
+                    .account {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        margin: 0 14px 5px 0;
+
+                        .sign {
+                            display: flex;
+                            align-items: center;
+                            position: absolute;
+                            right: 10px;
+                            color: #ff2525;
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+
+                    .warning {
+                        font-family: "Montserrat", sans-serif;
+                        color: #ff2525;
+                        font-size: 15px;
+                    }
+
+                    input.password {
+                        margin: 20px 14px 0 0;
+                    }
+
+                    input {
+                        background-color: #e6effe;
+                        border: none;
+                        border-radius: 15px;
+                        padding: 12px 25px 12px 14px;
+                        outline: none;
+                        font-size: 18px;
+                        width: 380px;
+                        font-family: "Montserrat", sans-serif;
+                        font-weight: 600;
+                    }
+
+                    input:focus {
+                        border: 1px solid #0058fe;
+                    }
+
+                    .regis_wrapper {
+                        margin-top: 1.5em;
+                        width: 418px;
+
+                        .signin {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            button {
+                                font-family: "Montserrat", sans-serif;
+                                width: 100px;
+                                border: none;
+                                border-radius: 66px;
+                                background-color: #0058fe;
+                                color: #fff;
+                                width: 110px;
+                                height: 43px;
+                                outline: none;
+
+                                p {
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 15px;
+                                    line-height: 24px;
+                                    text-decoration: none;
+                                }
+                            }
+
+                            p {
+                                font-size: 15px;
+                                font-weight: 500;
+                                font-family: "Montserrat", sans-serif;
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .signup {
+                            display: flex;
+                            margin-top: 2em;
+
+                            p,
+                            span {
+                                font-size: 15px;
+                                font-weight: 500;
+                                font-family: "Montserrat", sans-serif;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                padding-left: 0.5em;
+                                color: #0058fe;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main_background {
+                height: 550px;
+                width: 550px;
+            }
+        }
+    }
+}

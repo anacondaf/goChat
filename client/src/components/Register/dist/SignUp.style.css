@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOUuhs.ttf) format('truetype');
+}
+.SignUp {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 0 15em;
+  font-family: "Open Sans", sans-serif;
+}
+.SignUp h1 {
+  font-size: 27px;
+}
+.SignUp .form_wrapper {
+  display: flex;
+  box-shadow: 5px 5px 5px #939393;
+  border-radius: 10px;
+}
+.SignUp .form_wrapper .information {
+  flex-basis: 50%;
+  background-color: #323c47;
+  color: #fff;
+  padding: 3em 2em;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.SignUp .form_wrapper .information h1 {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.SignUp .form_wrapper .form {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 3em 3em;
+}
+.SignUp .form_wrapper .form h1 {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.SignUp .form_wrapper .form .data_frame {
+  display: flex;
+  flex-direction: column;
+}
+.SignUp .form_wrapper .form .data_frame div {
+  margin: 0.7em 0;
+}
+.SignUp .form_wrapper .form .data_frame input {
+  height: 30px;
+  outline: none;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+}
+.SignUp .form_wrapper .form .data_frame label {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.SignUp .form_wrapper .form .data_frame input:focus {
+  border: 1px solid #1d1daf;
+}
+.SignUp .form_wrapper .form .data_frame .input_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.SignUp .form_wrapper .form .data_frame .name {
+  display: flex;
+}
+.SignUp .form_wrapper .form .data_frame .name div:first-child {
+  margin-right: 1em;
+}
+.SignUp .form_wrapper .form .data_frame .name div:last-child {
+  margin-left: 1em;
+}
+.SignUp .form_wrapper .form .data_frame .security {
+  display: flex;
+}
+.SignUp .form_wrapper .form .data_frame .security div:first-child {
+  margin-right: 1em;
+}
+.SignUp .form_wrapper .form .data_frame .security div:last-child {
+  margin-left: 1em;
+}
+.SignUp .form_wrapper .form .agreement {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+}
+.SignUp .form_wrapper .form .agreement input[type="checkbox"] {
+  margin-right: 6px;
+}
+.SignUp .form_wrapper .form .agreement blockquote {
+  font-size: 15px;
+}
+.SignUp .form_wrapper .form .agreement blockquote a {
+  color: red;
+}
+.SignUp .form_wrapper .form button {
+  margin-top: 1em;
+  max-width: 100px;
+  padding: 0.5em 1em;
+}

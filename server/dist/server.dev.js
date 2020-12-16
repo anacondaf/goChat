@@ -5,33 +5,45 @@ var express = require("express");
 
 var http = require("http");
 
-var path = require("path"); //create server
+var path = require("path");
+
+var bodyParser = require("body-parser");
+
+var cors = require("cors"); //create server
 
 
 var app = express();
 var server = http.createServer(app);
 var PORT = 3001 || process.env.PORT;
+app.use(cors({
+  origin: true
+})); // parse application/x-www-form-urlencoded
 
-var io = require("socket.io")(server);
+app.use(bodyParser.urlencoded({
+  extended: false
+})); // parse application/json
 
-var usersList = []; //express config
+app.use(bodyParser.json());
 
-app.use(express["static"](path.join(__dirname, "public"))); //socket.io
+var io = require("socket.io")(server); //login namespace
 
-io.on("connection", function (socket) {
-  console.log(socket.id + ": connected");
-  usersList.push({
-    id: socket.id
+
+var login = io.of("/login");
+login.on("connection", function (socket) {
+  console.log("User logged in " + socket.id);
+  socket.on("login", function (data) {
+    console.log(data);
   });
-  socket.on("client-send-data", function (data) {
-    io.to("").emit("user-send-to-user", data);
-  });
-}); //import routes
+});
+var usersList = [];
+var message = []; //express config
+
+app.use(express["static"](path.join(__dirname, "public"))); //import routes
 
 var root = require("./routes/root"); //routes
 
 
-app.use("/", root);
+app.use("/auth", root);
 server.listen(PORT, function () {
   console.log("Server is running at ".concat(PORT));
 });

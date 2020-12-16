@@ -7,6 +7,8 @@ function FriendCard(props) {
     //state config
     const { images, index } = props;
 
+    const usernames = ["Messi", "Ronaldo", "Kaka", "David"];
+
     return (
         <div className={index === 0 ? "FriendCard active" : "FriendCard"}>
             <div className="photo">
@@ -16,7 +18,7 @@ function FriendCard(props) {
             </div>
 
             <div className="friend__info">
-                <p className="friend__name">Alina Judy</p>
+                <p className="friend__name">{usernames[index]}</p>
                 <p className="text">I miss you, Call me</p>
             </div>
 

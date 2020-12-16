@@ -1,25 +1,32 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 //css
 import "./dist/App.css";
 
 //import components
-import MenuBar from "./components/MenuBar/MenuBarComp";
-import FriendList from "./components/FriendList/FriendListComp";
-import ChatArea from "./components/ChatArea/ChatAreaComp";
-import FriendInfo from "./components/FriendInf/FriendInfComp";
+import Chat from "./components/Chat/Chat";
+import Homepage from "./components/Homepage/Homepage";
+import SignUp from "./components/Register/SignUp";
+
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
     return (
-        <div className="AppComponent">
-            <MenuBar />
+        <Router>
+            <div className="App">
+                <Route path="/" exact>
+                    <Homepage />
+                </Route>
 
-            <div className="ContentComponent">
-                <FriendList />
-                <ChatArea />
-                <FriendInfo />
+                <Route path="/signup">
+                    <SignUp />
+                </Route>
+
+                <Route path="/chat">
+                    <Chat />
+                </Route>
             </div>
-        </div>
+        </Router>
     );
 }
 
